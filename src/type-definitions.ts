@@ -22,3 +22,5 @@ let tuple2 = [1, "string"] as [number, string];
 
 let any: any = 1;
 let any2 = 1 as any;
+
+// Path: src\type-definitions.ts
