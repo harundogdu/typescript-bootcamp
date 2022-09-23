@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "lib": ["ESNext"],                  // Kullandığımız Kütüphaneler
-        "target": "ES3",                    // Hangi versiyon ile derleneceğini belirtiyoruz.
+        "target": "ES5",                    // Hangi versiyon ile derleneceğini belirtiyoruz.
         "strict": false,                    // Strict modunu açıyoruz ki hataları görelim(true ise).
         "module": "CommonJS",               // Modül sistemini belirtiyoruz.
         "moduleResolution": "Node",         // Modül çözümleme yöntemini belirtiyoruz.
