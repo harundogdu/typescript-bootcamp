@@ -1,14 +1,16 @@
 {
     "compilerOptions": {
-        "lib": [
-            "ESNext"
-        ],
-        "target": "ES3",
-        "strict": false,
-        "module": "CommonJS",
-        "moduleResolution": "Node",
-        "esModuleInterop": true,
-        "outDir": "dist",
-        "rootDir": "src"
+        "lib": ["ESNext"],                  // Kullandığımız Kütüphaneler
+        "target": "ES3",                    // Hangi versiyon ile derleneceğini belirtiyoruz.
+        "strict": false,                    // Strict modunu açıyoruz ki hataları görelim(true ise).
+        "module": "CommonJS",               // Modül sistemini belirtiyoruz.
+        "moduleResolution": "Node",         // Modül çözümleme yöntemini belirtiyoruz.
+        "esModuleInterop": true,            // ES modüllerini CommonJS modüllerine çeviriyoruz(true ise).
+        "outDir": "dist",                   // Derlenen dosyaların nereye kaydedileceğini belirtiyoruz.
+        "rootDir": "src",                   // Kaynak dosyaların nerede olduğunu belirtiyoruz.
+        "declaration": true,                // .d.ts dosyalarını oluşturuyoruz(true ise).
+        "declarationDir": "dist/types",     // .d.ts dosyalarının nereye kaydedileceğini belirtiyoruz.
+        "sourceMap": false,                 // Hata ayıklama için kaynak haritalarını oluşturuyoruz(true ise).
+        "removeComments": false,            // Yorum satırlarını kaldırıyoruz(true ise).
     }
 }
