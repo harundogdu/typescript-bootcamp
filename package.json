@@ -6,13 +6,14 @@
   "scripts": {
     "start": "concurrently \"npm run build\" \"npm run serve\"",
     "build": "node scripts/index.js && tsc",
-    "serve" : "node dist/index.js"
+    "serve": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^18.7.18",
+    "chalk": "^5.0.1",
     "concurrently": "^6.5.1"
   }
 }
