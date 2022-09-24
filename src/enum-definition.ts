@@ -1,6 +1,5 @@
 // Enum Definition
 import chalk from "chalk";
-
 // Example 1
 enum INotification {
     Success,
@@ -28,5 +27,8 @@ const sendNotification = (type: INotification) => {
 }
 
 sendNotification(INotification.Success)
+sendNotification(INotification.Error)
+sendNotification(INotification.Warning)
+sendNotification(INotification.Info)
 
 // Path: src\enum-definition.ts

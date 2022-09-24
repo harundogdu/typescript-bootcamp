@@ -4,16 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run build\" \"npm run serve\"",
+    "start": "node dist/index.js",
     "build": "node scripts/index.js && tsc",
-    "serve": "node dist/index.js"
+    "delete:dist" : "node scripts/index.js ",
+    "dev": "npm run delete:dist && tsc-watch --onSuccess \"node dist/index.js\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chalk": "4.1.2"
+  },
+  "devDependencies": {
     "@types/node": "^18.7.18",
-    "chalk": "^5.0.1",
-    "concurrently": "^6.5.1"
+    "concurrently": "^6.5.1",
+    "tsc-watch": "^5.0.3",
+    "typescript": "^4.8.3"
   }
 }

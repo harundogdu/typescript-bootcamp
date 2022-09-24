@@ -1,16 +1,24 @@
 {
     "compilerOptions": {
-        "lib": ["ESNext"],                  // Kullandığımız Kütüphaneler
-        "target": "ES5",                    // Hangi versiyon ile derleneceğini belirtiyoruz.
-        "strict": false,                    // Strict modunu açıyoruz ki hataları görelim(true ise).
-        "module": "CommonJS",               // Modül sistemini belirtiyoruz.
-        "moduleResolution": "Node",         // Modül çözümleme yöntemini belirtiyoruz.
-        "esModuleInterop": true,            // ES modüllerini CommonJS modüllerine çeviriyoruz(true ise).
-        "outDir": "dist",                   // Derlenen dosyaların nereye kaydedileceğini belirtiyoruz.
-        "rootDir": "src",                   // Kaynak dosyaların nerede olduğunu belirtiyoruz.
-        "declaration": true,                // .d.ts dosyalarını oluşturuyoruz(true ise).
-        "declarationDir": "dist/types",     // .d.ts dosyalarının nereye kaydedileceğini belirtiyoruz.
-        "sourceMap": false,                 // Hata ayıklama için kaynak haritalarını oluşturuyoruz(true ise).
-        "removeComments": false,            // Yorum satırlarını kaldırıyoruz(true ise).
-    }
+        "lib": [
+            "ESNext"
+        ], // Kullandığımız Kütüphaneler
+        "target": "ES5", // Hangi versiyon ile derleneceğini belirtiyoruz.
+        "strict": false, // Strict modunu açıyoruz ki hataları görelim(true ise).
+        "module": "CommonJS", // Modül sistemini belirtiyoruz.
+        "moduleResolution": "Node", // Modül çözümleme yöntemini belirtiyoruz.
+        "esModuleInterop": true, // ES modüllerini CommonJS modüllerine çeviriyoruz(true ise).
+        "outDir": "dist", // Derlenen dosyaların nereye kaydedileceğini belirtiyoruz.
+        "rootDir": "src", // Kaynak dosyaların nerede olduğunu belirtiyoruz.
+        "declaration": true, // .d.ts dosyalarını oluşturuyoruz(true ise).
+        "declarationDir": "dist/types", // .d.ts dosyalarının nereye kaydedileceğini belirtiyoruz.
+        "sourceMap": false, // Hata ayıklama için kaynak haritalarını oluşturuyoruz(true ise).
+        "removeComments": false, // Yorum satırlarını kaldırıyoruz(true ise).
+    }, // Derleme ayarları
+    "include": [
+        "src/**/*"
+    ], // Derlenecek dosyaların nerede olduğunu belirtiyoruz.
+    "exclude": [
+        "node_modules"
+    ] // Derlenmeyecek dosyaların nerede olduğunu belirtiyoruz.
 }
