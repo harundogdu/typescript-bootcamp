@@ -1,8 +1,8 @@
-const fs = require('fs');
-const path = require('path');
+import { existsSync, rmSync } from 'fs';
+import { join } from 'path';
 
-const dist = path.join(process.cwd(), 'dist');
+const dist = join(process.cwd(), 'dist');
 
-if(fs.existsSync(dist)){
-    fs.rmSync(dist, { recursive: true , force: true });
+if(existsSync(dist)){
+    rmSync(dist, { recursive: true , force: true });
 }
