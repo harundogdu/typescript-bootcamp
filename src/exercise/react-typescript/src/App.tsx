@@ -1,6 +1,13 @@
 import axios from 'axios';
 import React, { useEffect } from 'react';
-import { Button, CountryItem, Input, Loading, Status } from './components';
+import {
+  Button,
+  Container,
+  CountryItem,
+  Input,
+  Loading,
+  Status
+} from './components';
 import { ICountry } from './types';
 
 function App() {
@@ -32,26 +39,21 @@ function App() {
 
   return (
     <div className='App'>
-      {/**
-       * Loading component
-       */}
-      <Loading loading={loading}>
-        {countries.map(country => (
-          <CountryItem key={country.name.common} country={country} />
-        ))}
-      </Loading>
-      {/**
-       * Input component
-       */}
-      <Input value={search} onChange={handleChange} />
-      {/**
-       * Status component
-       */}
-      <Status status='info' />
-      {/**
-       * Button component
-       */}
-      <Button title='Click Me!' onClick={() => console.log('Clicked!')} />
+      {/* Container component*/}
+      <Container styles={{ padding: '2rem' }}>
+        {/* Loading component*/}
+        <Loading loading={loading}>
+          {countries.map(country => (
+            <CountryItem key={country.name.common} country={country} />
+          ))}
+        </Loading>
+        {/* Input component */}
+        <Input value={search} onChange={handleChange} />
+        {/* Status component */}
+        <Status status='info' />
+        {/* Button component */}
+        <Button title='Click Me!' onClick={() => console.log('Clicked!')} />
+      </Container>
     </div>
   );
 }
