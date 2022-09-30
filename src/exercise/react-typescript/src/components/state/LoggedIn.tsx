@@ -18,7 +18,7 @@ const LoggedIn: React.FC = () => {
   const [authState, setAuthState] = React.useState<IAuthState | null>({
     isLoggedIn: false,
     user: null
-  });
+  } as IAuthState);
 
   const login = () => {
     setAuthState({
